@@ -7,9 +7,6 @@
 	<groupId>git_java_mkyong</groupId>
 	<artifactId>git_java_mkyong</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<modules>
-		<module>struts_1</module>
-	</modules>
 	<packaging>pom</packaging>
 	<name>MKyong Sandbox</name>
 
