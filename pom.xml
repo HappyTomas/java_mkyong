@@ -7,11 +7,16 @@
 	<groupId>git_java_mkyong</groupId>
 	<artifactId>git_java_mkyong</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<modules>
+		<module>struts_1</module>
+	</modules>
+	<packaging>pom</packaging>
 	<name>MKyong Sandbox</name>
 
 	<properties>
-		<jettyVersion>9.0.2.v20130417</jettyVersion>
+		<mavenCompilerPlugin>1.7</mavenCompilerPlugin>
+		<jettyPluginVersion>9.0.2.v20130417</jettyPluginVersion>
+		<jettyDependencyVersion>3.0.0.v201112011016</jettyDependencyVersion>
 		<spring.version>3.0.5.RELEASE</spring.version>
 	</properties>
 
@@ -71,11 +76,11 @@
 			<version>1.1.1</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc14</artifactId>
-			<version>10.2.0.4.0</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.oracle</groupId>-->
+			<!--<artifactId>ojdbc14</artifactId>-->
+			<!--<version>10.2.0.4.0</version>-->
+		<!--</dependency>-->
 
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -93,7 +98,7 @@
 		<dependency>
 			<groupId>org.eclipse.jetty.orbit</groupId>
 			<artifactId>javax.servlet</artifactId>
-			<version>3.0.0.v201112011016</version>
+			<version>${jettyDependencyVersion}</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -125,15 +130,15 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.3.2</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>${mavenCompilerPlugin}</source>
+					<target>${mavenCompilerPlugin}</target>
 				</configuration>
 			</plugin>
 
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
-				<version>${jettyVersion}</version>
+				<version>${jettyPluginVersion}</version>
 			</plugin>
 
 		</plugins>
