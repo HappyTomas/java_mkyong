@@ -10,6 +10,11 @@
 	<packaging>pom</packaging>
 	<name>MKyong Sandbox</name>
 
+	<modules>
+		<module>spring</module>
+		<module>struts_1</module>
+	</modules>
+
 	<properties>
 		<mavenCompilerPlugin>1.7</mavenCompilerPlugin>
 		<jettyPluginVersion>9.0.2.v20130417</jettyPluginVersion>
@@ -74,9 +79,9 @@
 		</dependency>
 
 		<!--<dependency>-->
-			<!--<groupId>com.oracle</groupId>-->
-			<!--<artifactId>ojdbc14</artifactId>-->
-			<!--<version>10.2.0.4.0</version>-->
+		<!--<groupId>com.oracle</groupId>-->
+		<!--<artifactId>ojdbc14</artifactId>-->
+		<!--<version>10.2.0.4.0</version>-->
 		<!--</dependency>-->
 
 		<dependency>
@@ -97,25 +102,6 @@
 			<artifactId>javax.servlet</artifactId>
 			<version>${jettyDependencyVersion}</version>
 			<scope>provided</scope>
-		</dependency>
-
-		<!-- Spring 3 dependencies -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
-			<version>${spring.version}</version>
 		</dependency>
 
 	</dependencies>
