@@ -13,7 +13,8 @@
 	<modules>
 		<module>spring</module>
 		<module>struts_1</module>
-	</modules>
+        <module>log4j</module>
+    </modules>
 
 	<properties>
 		<mavenCompilerPlugin>1.7</mavenCompilerPlugin>
